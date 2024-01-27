@@ -1,0 +1,498 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+:root {
+    --primary-colour: #262626;
+    --secondary-colour: #D7B600;
+    --header-bg: #273B4A;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-colour);
+}
+
+h1 {
+    /* font-family: 'Notable', sans-serif; */
+    font-family: 'Rammetto One', cursive;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color: var(--secondary-colour);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+
+/* HEADER */
+
+#header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.info-header {
+    background-color: var(--secondary-colour);
+    padding: 10px 0;
+}
+
+.info-header i {
+    margin-right: 6px;
+}
+
+.info-header span {
+    margin-right: 30px;
+}
+
+.navbar {
+    background-color: var(--header-bg) !important;
+    padding: 15px 0;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px 19px;
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    background-color: var(--secondary-colour);
+    color: black !important;
+}
+
+
+/* MAIN */
+
+.banner {
+    position: relative;
+}
+
+#banner-video {
+    width: 100%;
+}
+
+.form-inline {
+    position: relative;
+}
+
+.fa-search {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #262626;
+}
+
+.form-control {
+    padding-left: 2.2rem;
+}
+
+input.search {
+    padding: 0.7rem;
+    width: 265px;
+    border-radius: 0px;
+    border: 1px solid #000;
+    box-shadow: 0 5px 30px rgb(45 45 45 / 36%);
+}
+
+.form-control.mr-sm-2 {
+    margin-right: 0 !important;
+}
+
+.navbar--nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    border-top: 0.2px solid #dedcdc;
+    margin-top: 10px;
+}
+
+.navbar--nav .nav-item {
+    margin: 10px 0;
+}
+
+.navbar--nav .nav-link {
+    color: var(--primary-colour);
+    font-weight: 500;
+}
+
+
+/* ACTIVITY */
+
+#activity {
+    margin: 100px 0;
+}
+
+#activity .box--activity {
+    box-shadow: -1px 2px 17px 5px #a6a5a5fa;
+    border-radius: 10px;
+}
+
+#activity .ski--school {
+    background-image: url(../photos/ski/ski-school-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 50px 50px;
+    color: white;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.ski--school h2 {
+    font-family: 'Rammetto One', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.ski--school p {
+    max-width: 320px;
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+#activity .btn.btn-warning {
+    border-radius: 4px !important;
+}
+
+#activity .activity--text {
+    padding: 50px;
+    padding-right: 0;
+    /* box-shadow: 4px 2px 18px -6px #262626; */
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.activity--text h3 {
+    font-family: 'Marcellus', serif;
+    margin-bottom: 30px;
+}
+
+.activity--text .skiing--riding,
+.activity--text .snowsports--school,
+.activity--text .nordic--skiing {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.activity--text .skiing--riding i,
+.activity--text .snowsports--school i,
+.activity--text .nordic--skiing i {
+    position: absolute;
+    top: 7px;
+    font-size: 17px;
+    color: #d3d3d3;
+}
+
+.activity--text .skiing--riding span,
+.activity--text .snowsports--school span,
+.activity--text .nordic--skiing span {
+    margin-left: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--header-bg);
+}
+
+.activity--text .skiing--riding a,
+.activity--text .snowsports--school a,
+.activity--text .nordic--skiing a {
+    margin-left: 20px;
+    color: var(--secondary-colour);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.activity--text .more--activity {
+    float: right;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--primary-colour);
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+
+/* TESTIMONIALS */
+
+#testimonials {
+    background-image: url(../photos/testemonials-bg-777.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.right--testimonials {
+    float: right;
+}
+
+.right--testimonials h3,
+.right--testimonials h5 {
+    color: var(--secondary-colour);
+    font-family: 'Marcellus', serif;
+}
+
+.right--testimonials h3 {
+    margin-bottom: 50px;
+}
+
+.right--testimonials h5 {
+    font-size: 23px;
+}
+
+.right--testimonials .carousel::before {
+    content: '"';
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 100px;
+    color: var(--secondary-colour);
+    position: absolute;
+    top: -25px;
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.carousel-indicators {
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 15px;
+    bottom: 35px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+}
+
+.carousel-indicators .active {
+    opacity: 0.7;
+}
+
+.right--testimonials .carousel-inner {
+    width: 67%;
+    left: 80px;
+}
+
+.right--testimonials .carousel-caption {
+    left: 0;
+    text-align: left;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.right--testimonials .carousel-caption p {
+    font-weight: 300;
+}
+
+.right--testimonials img {
+    width: 100px;
+}
+
+
+/* EQUIPMENT */
+
+#equipment {
+    text-align: center;
+    margin: 70px auto;
+}
+
+#equipment h6 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-weight: 300;
+}
+
+#equipment h3 {
+    font-family: 'Marcellus', serif;
+    max-width: 60%;
+    margin: 20px auto;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+#equipment .shop--paragraph {
+    max-width: 630px;
+    margin: 60px auto;
+    position: relative;
+    font-weight: 300;
+}
+
+#equipment .shop--paragraph::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 200px;
+    background-color: var(--secondary-colour);
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#equipment .card {
+    border: none;
+}
+
+#equipment .card p {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 10px 0 25px;
+}
+
+.card .price {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--secondary-colour);
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-image: url(../photos/footer-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .logo-footer {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer .logo-footer img {
+    width: 200px;
+}
+
+.footer .email--footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.footer .form-control {
+    padding-left: 1rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn.btn-warning {
+    border-radius: 0 !important;
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+    font-weight: 700;
+    margin-top: 40px;
+    text-transform: uppercase;
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-color: var(--secondary-colour);
+}
+
+.footer .navbar--nav {
+    justify-content: center;
+    border-top: none;
+    color: #8C8C8C;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.footer .navbar--nav a {
+    color: #8C8C8C;
+    font-size: 20px;
+}
+
+.footer .navbar--nav a:hover {
+    color: #6c6c6c;
+}
+
+.social--media .row {
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.social--media .fb,
+.social--media .twitter,
+.social--media .instagram {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    background-color: var(--primary-colour);
+    position: relative;
+    margin: 0 25px;
+    cursor: pointer;
+}
+
+.social--media .fb:hover,
+.social--media .twitter:hover,
+.social--media .instagram:hover {
+    background-color: rgb(93, 93, 93);
+}
+
+.social--media i {
+    font-size: 20px;
+    color: #8C8C8C;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social--media i:hover {
+    color: rgb(201, 201, 201);
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #8C8C8C;
+    background-color: var(--primary-colour);
+    font-size: 15px;
+    padding: 25px;
+}
+
+.copyright .winter--footer {
+    color: var(--secondary-colour);
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
